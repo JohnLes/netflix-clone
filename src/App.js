@@ -16,7 +16,7 @@ function App() {
     <>
     <HashRouter basement={'/netflix-clone'}>
     <Routes>
-        <Route path ="/" element={<LandingPage />} />
+        <Route path ="/netflix-clone" element={<LandingPage />} />
         <Route path ="/signin" element={<SignIn />} />
         <Route path ="/signout" element={<SignUp />} />
         <Route path ="/netflixshow" element={<NetflixShow />} />
