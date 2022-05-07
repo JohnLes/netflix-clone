@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <Routes basename="/netflix-clone">
+    <Routes>
         <Route path ="/" element={<LandingPage />} />
         <Route path ="/signin" element={<SignIn />} />
         <Route path ="/signout" element={<SignUp />} />
