@@ -87,7 +87,7 @@ const SignIn = () => {
                         <p className= 'text-red-700 text-sm'>{formErrors.password}</p>
                         <button 
                         className='w-full h-10 bg-red-700 hover:bg-red-500   rounded-md'>
-                            <ConditionalLink to="netflix-clone/netflixshow" 
+                            <ConditionalLink to="/netflixshow" 
                             condition={Object.keys(formErrors).length === 0 && isSubmit}
                             className="flex w-full justify-center"> 
                             Sign In 
