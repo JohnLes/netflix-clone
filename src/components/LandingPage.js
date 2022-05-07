@@ -68,16 +68,16 @@ function LandingPage({children}) {
         <p className='text-lg'>Ready to watch? Enter your email to create or restart your membership.</p>
 
             <input className='text-black text-lg h-10 p-2 w-full lg:h-20 lg:w-[70%]' type="email" placeholder='Email address' />
-            <button onClick={()=> setShouldShow(true)}
+            <button onClick={()=> setShouldShowSU(true)}
             className='bg-red-700 hover:bg-red-500  h-10  sm:py-2 px-4 rounded lg:h-20 lg:w-[30%] lg:rounded-none lg:text-xl'>Get Started &gt;</button>
-            {shouldShow && (  
-            <ModalBackground onClick={()=>setShouldShow(false)}>
+            {shouldShowSU && (  
+            <ModalBackground onClick={()=>setShouldShowSU(false)}>
                 <div className='relative top-40 align-middle place-items-center'>
                 <ModalBodySU className='static' onClick = {e => e.stopPropagation()}>
                     {children}
                     <SignUp />
                     <div className="grid justify-items-end">
-                    <button onClick={()=>setShouldShow(false)} className=' text-black pt-4 '> Close </button>
+                    <button onClick={()=>setShouldShowSU(false)} className=' text-black pt-4 '> Close </button>
                     </div>
                 </ModalBodySU>
                 </div>
