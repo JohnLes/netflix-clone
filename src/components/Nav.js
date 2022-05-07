@@ -34,7 +34,7 @@ function Nav() {
         {
             label: 'Yes',
             onClick: () => {
-                let path = `/netflix-clone`; 
+                let path = `/`; 
                 navigate(path);
             }
         },

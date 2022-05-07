@@ -14,12 +14,12 @@ function App() {
 
   return (
     <>
-    <Routes>
-        <Route path ="/netflix-clone" element={<LandingPage />} />
-        <Route path ="/netflix-clone/signin" element={<SignIn />} />
-        <Route path ="/netflix-clone/signout" element={<SignUp />} />
-        <Route path ="/netflix-clone/netflixshow" element={<NetflixShow />} />
-        <Route path ="/netflix-clone/*" element={<NotFoundPage />} />
+    <Routes basename="/netflix-clone">
+        <Route path ="/" element={<LandingPage />} />
+        <Route path ="/signin" element={<SignIn />} />
+        <Route path ="/signout" element={<SignUp />} />
+        <Route path ="/netflixshow" element={<NetflixShow />} />
+        <Route path ="/*" element={<NotFoundPage />} />
       </Routes>
     </>
   );
