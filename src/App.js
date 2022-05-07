@@ -5,7 +5,7 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import NotFoundPage from './components/NotFoundPage';
 import NetflixShow from './components/NetflixShow';
-import {HashRouter, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 
 
@@ -14,15 +14,13 @@ function App() {
 
   return (
     <>
-    <HashRouter basement={'/netflix-clone'}>
     <Routes>
         <Route path ="/netflix-clone" element={<LandingPage />} />
-        <Route path ="/signin" element={<SignIn />} />
-        <Route path ="/signout" element={<SignUp />} />
-        <Route path ="/netflixshow" element={<NetflixShow />} />
-        <Route path ="/*" element={<NotFoundPage />} />
+        <Route path ="/netflix-clone/signin" element={<SignIn />} />
+        <Route path ="/netflix-clone/signout" element={<SignUp />} />
+        <Route path ="/netflix-clone/netflixshow" element={<NetflixShow />} />
+        <Route path ="/netflix-clone/*" element={<NotFoundPage />} />
       </Routes>
-    </HashRouter>
     </>
   );
 }
